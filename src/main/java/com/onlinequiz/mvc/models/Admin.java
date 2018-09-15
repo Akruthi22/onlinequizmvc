@@ -1,8 +1,8 @@
 package com.onlinequiz.mvc.models;
 
 public class Admin {
-    private String adminusername;
-    private String adminpassword;
+     String adminusername;
+     String adminpassword;
 
     public Admin() {
 
