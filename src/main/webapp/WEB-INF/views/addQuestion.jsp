@@ -65,17 +65,17 @@
 
 
                 <td><b>B:</b></td>
-                <td><textarea class="form-control" rows="2" style="width:50%" name="b" required></textarea></td>
+                <td><form:textarea path="option2" class="form-control" rows="2" style="width:50%" name="b" ></form:textarea></td>
             </tr>
 
             <tr>
                 <td><b>C:</b></td>
-                <td><textarea class="form-control" rows="2" style="width:50%" name="c" required></textarea></td>
+                <td><form:textarea  path="option3" class="form-control" rows="2" style="width:50%" name="c"></form:textarea></td>
             </tr>
 
             <tr>
                 <td><b>D:</b></td>
-                <td><textarea class="form-control" rows="2" style="width:50%" name="d" required></textarea></td>
+                <td><form:textarea path="option4" class="form-control" rows="2" style="width:50%" name="d" ></form:textarea></td>
             </tr>
 
             <tr>

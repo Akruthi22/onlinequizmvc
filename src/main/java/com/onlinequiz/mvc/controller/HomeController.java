@@ -1,5 +1,6 @@
 package com.onlinequiz.mvc.controller;
 
+import com.onlinequiz.mvc.models.Admin;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,7 +13,7 @@ public class HomeController {
     public ModelAndView viewHome() {
 
 
-        return new ModelAndView("rules");
+        return new ModelAndView("home");
 
     }
 
@@ -25,8 +26,13 @@ public class HomeController {
     public ModelAndView viewRegister(){
         return new ModelAndView("registeration");
     }
-    @RequestMapping(value="/AdminLog",method = RequestMethod.GET)
-    public ModelAndView viewAdminLogin(){
-        return new ModelAndView("adminLogin");
+
+    @RequestMapping(value="/adminLogin", method = RequestMethod.GET)
+    public String viewAdminLogin(){
+        System.out.println("inside the admin Login...");
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("adminLogin",new Admin());
+//        System.out.println("returning ...");
+        return "adminLogin";
     }
 }

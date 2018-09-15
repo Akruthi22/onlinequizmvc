@@ -27,6 +27,7 @@ public class QuestionController {
 
         model.addAttribute("question",new Question());
 
+
         return modelAndView;
 
     }
@@ -38,6 +39,7 @@ public class QuestionController {
 
         ModelAndView modelAndView=new ModelAndView();
         modelAndView.setViewName("addQuestion");
+
 
         return modelAndView;
     }

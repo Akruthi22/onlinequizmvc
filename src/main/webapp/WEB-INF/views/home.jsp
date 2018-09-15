@@ -8,11 +8,11 @@
     <title>Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 
     <style>
         .margins{
@@ -64,14 +64,14 @@
             <a class="nav-link" href="#">AboutUS</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.jsp">Contact</a>
         </li>
 
     </ul>
     <ul class="nav navbar-nav ml-auto">
         <li class="nav-item">
-        <a href="/adminLogin"><span class="glyphicon glyphicon-user"></span>Admin Login</a>
-
+            <a href="/adminLogin">Admin Login</a>
+      </li>
     </ul>
 
 </nav>
@@ -128,7 +128,8 @@
     </div>
       <div class="row">
           <div class="col-sm-3">
-
+              <p>Admin Login</p>
+              <a href="/adminLogin" class="btn btn-outline-primary">Admin Login</a>
           </div>
             <div class="col-sm-3">
                 <p>Student Login</p>
@@ -138,9 +139,7 @@
                 <p>New Student? Register Here </p>
                 <a href="/Register" class="btn btn-outline-primary">Register</a>
             </div>
-          <div class="col-sm-3">
 
-          </div>
       </div>
 </div>
 </body>
